@@ -1,0 +1,15 @@
+2017.05.25 09:58:21 INFO  es[][o.s.p.ProcessEntryPoint] Starting es
+2017.05.25 09:58:21 INFO  es[][o.s.s.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2017.05.25 09:58:21 INFO  es[][o.elasticsearch.node] [sonarqube] version[2.4.4], pid[7222], build[fcbb46d/2017-01-03T11:33:16Z]
+2017.05.25 09:58:21 INFO  es[][o.elasticsearch.node] [sonarqube] initializing ...
+2017.05.25 09:58:21 INFO  es[][o.e.plugins] [sonarqube] modules [], plugins [], sites []
+2017.05.25 09:58:21 INFO  es[][o.elasticsearch.env] [sonarqube] using [1] data paths, mounts [[/ (/dev/mapper/ubuntu--vg-root)]], net usable_space [135.5gb], net total_space [156.6gb], spins? [no], types [ext4]
+2017.05.25 09:58:21 INFO  es[][o.elasticsearch.env] [sonarqube] heap size [990.7mb], compressed ordinary object pointers [true]
+2017.05.25 09:58:24 INFO  es[][o.elasticsearch.node] [sonarqube] initialized
+2017.05.25 09:58:24 INFO  es[][o.elasticsearch.node] [sonarqube] starting ...
+2017.05.25 09:58:24 INFO  es[][o.e.transport] [sonarqube] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2017.05.25 09:58:24 INFO  es[][o.e.discovery] [sonarqube] sonarqube/qI_noIOvQq-5UyUYGggsNw
+2017.05.25 09:58:27 INFO  es[][o.e.cluster.service] [sonarqube] new_master {sonarqube}{qI_noIOvQq-5UyUYGggsNw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube, master=true}, reason: zen-disco-join(elected_as_master, [0] joins received)
+2017.05.25 09:58:27 INFO  es[][o.elasticsearch.node] [sonarqube] started
+2017.05.25 09:58:27 INFO  es[][o.e.gateway] [sonarqube] recovered [7] indices into cluster_state
+2017.05.25 09:58:31 INFO  es[][o.e.c.r.allocation] [sonarqube] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0], [components][1], [components][1], [components][0]] ...]).

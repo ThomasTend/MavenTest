@@ -1,0 +1,11 @@
+2017.05.23 14:43:41 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2017.05.23 14:43:41 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2017.05.23 14:43:42 INFO  ce[][o.e.plugins] [Tomazooma] modules [], plugins [], sites []
+2017.05.23 14:43:43 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2017.05.23 14:43:43 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.23 14:43:43 WARN  ce[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.23 14:43:44 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/etentho/Developer/Test/sonarqube-6.3.1
+2017.05.23 14:43:44 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2017.05.23 14:43:46 INFO  ce[][o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Thu Nov 24 14:43:46 EST 2016
+2017.05.23 14:43:46 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is up
+2017.05.23 17:12:56 INFO  ce[][o.s.ce.app.CeServer] Compute Engine shutting down...

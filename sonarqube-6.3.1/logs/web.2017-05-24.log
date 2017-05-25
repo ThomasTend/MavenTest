@@ -1,0 +1,155 @@
+2017.05.24 10:53:18 INFO  web[][o.s.p.ProcessEntryPoint] Starting web
+2017.05.24 10:53:19 INFO  web[][o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2017.05.24 10:53:20 INFO  web[][o.e.plugins] [Iguana] modules [], plugins [], sites []
+2017.05.24 10:53:21 INFO  web[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2017.05.24 10:53:21 INFO  web[][o.s.s.p.LogServerVersion] SonarQube Server / 6.3.1.21392 / 54be39f47d188340b14d4d9236bbf3d43b1db2ae
+2017.05.24 10:53:21 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://localhost:9092/sonar
+2017.05.24 10:53:21 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database started. Data stored in: /home/etentho/Developer/Test/sonarqube-6.3.1/data
+2017.05.24 10:53:21 INFO  web[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.24 10:53:22 WARN  web[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.24 10:53:23 INFO  web[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/etentho/Developer/Test/sonarqube-6.3.1
+2017.05.24 10:53:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin C# / 5.7.0.612 / 6c7d5830a41c62429eade2ead6e3fdf12a388856
+2017.05.24 10:53:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Flex / 2.3 / 79167f762219bea1fd181ff5ef6ca4b34abd1675
+2017.05.24 10:53:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Git / 1.2 / a713dd64daf8719ba4e7f551f9a1966c62690c17
+2017.05.24 10:53:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Java / 4.5.0.8398 / f5a869c42a13d27735d57da1691ca167093a885b
+2017.05.24 10:53:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin PHP / 2.9.2.1744 / 949b3433f56b501573b08243bc8485b0585ad5a1
+2017.05.24 10:53:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Python / 1.7.0.1195 / 5c015d7ae2353373d3dc52a465d1cd805ab6535a
+2017.05.24 10:53:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SVN / 1.4.0.522 / 1309b92a587d1c8fd55a2981c69ceadc1f79e79c
+2017.05.24 10:53:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarJS / 2.20.0.4207 / d65285af4c43250613fa9d176207aeda9176d20a
+2017.05.24 10:53:25 INFO  web[][o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2017.05.24 10:53:26 INFO  web[][o.s.s.n.NotificationDaemon] Notification service started (delay 60 sec.)
+2017.05.24 10:53:26 INFO  web[][o.s.s.s.RegisterMetrics] Register metrics
+2017.05.24 10:53:26 INFO  web[][o.s.s.r.RegisterRules] Register rules
+2017.05.24 10:53:29 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register quality profiles
+2017.05.24 10:53:31 INFO  web[][o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2017.05.24 10:53:31 INFO  web[][o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2017.05.24 10:53:31 INFO  web[][o.s.s.e.IndexerStartupTask] Index authorization
+2017.05.24 10:53:31 INFO  web[][o.s.s.e.IndexerStartupTask] Index issues
+2017.05.24 10:53:31 INFO  web[][o.s.s.e.IndexerStartupTask] Index tests
+2017.05.24 10:53:31 INFO  web[][o.s.s.e.IndexerStartupTask] Index users
+2017.05.24 10:53:31 INFO  web[][o.s.s.e.IndexerStartupTask] Index views
+2017.05.24 10:53:31 INFO  web[][o.s.s.e.IndexerStartupTask] Index project measures
+2017.05.24 10:53:31 INFO  web[][o.s.s.e.IndexerStartupTask] Index components
+2017.05.24 10:53:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LoginAction@5f12f588 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@789515cd]
+2017.05.24 10:53:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LogoutAction@3deac024 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@751cdca4]
+2017.05.24 10:53:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.ValidateAction@159aed98 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@7e9af4ef]
+2017.05.24 10:53:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.ws.WebServiceFilter@6612f5d5 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@329f87ff]
+2017.05.24 10:53:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.ws.DeprecatedPropertiesWsFilter@2a83c68e [pattern=org.sonar.api.web.ServletFilter$UrlPattern@5bce2256]
+2017.05.24 10:53:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@115379df [pattern=org.sonar.api.web.ServletFilter$UrlPattern@25d06acd]
+2017.05.24 10:53:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@1d21ba76 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@17b6b58c]
+2017.05.24 10:53:32 INFO  web[][o.s.s.a.TomcatAccessLog] Web server is started
+2017.05.24 10:53:32 INFO  web[][o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+2017.05.24 11:32:22 INFO  web[][o.s.s.n.NotificationDaemon] Notification service stopped
+2017.05.24 11:32:22 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database stopped
+2017.05.24 11:32:24 INFO  web[][o.s.s.a.TomcatAccessLog] Web server is stopped
+2017.05.24 11:51:20 INFO  web[][o.s.p.ProcessEntryPoint] Starting web
+2017.05.24 11:51:20 INFO  web[][o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2017.05.24 11:51:21 INFO  web[][o.e.plugins] [Ricochet] modules [], plugins [], sites []
+2017.05.24 11:51:22 INFO  web[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2017.05.24 11:51:22 INFO  web[][o.s.s.p.LogServerVersion] SonarQube Server / 6.3.1.21392 / 54be39f47d188340b14d4d9236bbf3d43b1db2ae
+2017.05.24 11:51:22 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://localhost:9092/sonar
+2017.05.24 11:51:22 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database started. Data stored in: /home/etentho/Developer/Test/sonarqube-6.3.1/data
+2017.05.24 11:51:22 INFO  web[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.24 11:51:23 WARN  web[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.24 11:51:24 INFO  web[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/etentho/Developer/Test/sonarqube-6.3.1
+2017.05.24 11:51:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin C# / 5.7.0.612 / 6c7d5830a41c62429eade2ead6e3fdf12a388856
+2017.05.24 11:51:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Flex / 2.3 / 79167f762219bea1fd181ff5ef6ca4b34abd1675
+2017.05.24 11:51:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Git / 1.2 / a713dd64daf8719ba4e7f551f9a1966c62690c17
+2017.05.24 11:51:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Java / 4.5.0.8398 / f5a869c42a13d27735d57da1691ca167093a885b
+2017.05.24 11:51:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin PHP / 2.9.2.1744 / 949b3433f56b501573b08243bc8485b0585ad5a1
+2017.05.24 11:51:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Python / 1.7.0.1195 / 5c015d7ae2353373d3dc52a465d1cd805ab6535a
+2017.05.24 11:51:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SVN / 1.4.0.522 / 1309b92a587d1c8fd55a2981c69ceadc1f79e79c
+2017.05.24 11:51:24 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarJS / 2.20.0.4207 / d65285af4c43250613fa9d176207aeda9176d20a
+2017.05.24 11:51:26 INFO  web[][o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2017.05.24 11:51:26 INFO  web[][o.s.s.n.NotificationDaemon] Notification service started (delay 60 sec.)
+2017.05.24 11:51:27 INFO  web[][o.s.s.s.RegisterMetrics] Register metrics
+2017.05.24 11:51:27 INFO  web[][o.s.s.r.RegisterRules] Register rules
+2017.05.24 11:51:30 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register quality profiles
+2017.05.24 11:51:31 INFO  web[][o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2017.05.24 11:51:31 INFO  web[][o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2017.05.24 11:51:31 INFO  web[][o.s.s.e.IndexerStartupTask] Index authorization
+2017.05.24 11:51:31 INFO  web[][o.s.s.e.IndexerStartupTask] Index issues
+2017.05.24 11:51:32 INFO  web[][o.s.s.e.IndexerStartupTask] Index tests
+2017.05.24 11:51:32 INFO  web[][o.s.s.e.IndexerStartupTask] Index users
+2017.05.24 11:51:32 INFO  web[][o.s.s.e.IndexerStartupTask] Index views
+2017.05.24 11:51:32 INFO  web[][o.s.s.e.IndexerStartupTask] Index project measures
+2017.05.24 11:51:32 INFO  web[][o.s.s.e.IndexerStartupTask] Index components
+2017.05.24 11:51:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LoginAction@c99fb64 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@7851e9c9]
+2017.05.24 11:51:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LogoutAction@2a97a667 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@69163a8a]
+2017.05.24 11:51:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.ValidateAction@20fa3974 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@37c91792]
+2017.05.24 11:51:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.ws.WebServiceFilter@4cdc1371 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@7790757c]
+2017.05.24 11:51:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.ws.DeprecatedPropertiesWsFilter@6bd24cb0 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@47b99d20]
+2017.05.24 11:51:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@68de27c6 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@119041a1]
+2017.05.24 11:51:32 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@18e6f992 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@11f1d5f]
+2017.05.24 11:51:32 INFO  web[][o.s.s.a.TomcatAccessLog] Web server is started
+2017.05.24 11:51:32 INFO  web[][o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+2017.05.24 12:10:42 INFO  web[][o.s.s.n.NotificationDaemon] Notification service stopped
+2017.05.24 12:10:42 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database stopped
+2017.05.24 12:10:43 INFO  web[][o.s.s.a.TomcatAccessLog] Web server is stopped
+2017.05.24 12:16:43 INFO  web[][o.s.p.ProcessEntryPoint] Starting web
+2017.05.24 12:16:44 INFO  web[][o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2017.05.24 12:16:44 INFO  web[][o.e.plugins] [Radian] modules [], plugins [], sites []
+2017.05.24 12:16:45 INFO  web[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2017.05.24 12:16:45 INFO  web[][o.s.s.p.LogServerVersion] SonarQube Server / 6.3.1.21392 / 54be39f47d188340b14d4d9236bbf3d43b1db2ae
+2017.05.24 12:16:46 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://localhost:9092/sonar
+2017.05.24 12:16:46 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database started. Data stored in: /home/etentho/Developer/Test/sonarqube-6.3.1/data
+2017.05.24 12:16:46 INFO  web[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.24 12:16:47 WARN  web[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.24 12:16:48 INFO  web[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/etentho/Developer/Test/sonarqube-6.3.1
+2017.05.24 12:16:49 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin C# / 5.7.0.612 / 6c7d5830a41c62429eade2ead6e3fdf12a388856
+2017.05.24 12:16:49 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Flex / 2.3 / 79167f762219bea1fd181ff5ef6ca4b34abd1675
+2017.05.24 12:16:49 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Git / 1.2 / a713dd64daf8719ba4e7f551f9a1966c62690c17
+2017.05.24 12:16:49 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Java / 4.5.0.8398 / f5a869c42a13d27735d57da1691ca167093a885b
+2017.05.24 12:16:49 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin PHP / 2.9.2.1744 / 949b3433f56b501573b08243bc8485b0585ad5a1
+2017.05.24 12:16:49 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Python / 1.7.0.1195 / 5c015d7ae2353373d3dc52a465d1cd805ab6535a
+2017.05.24 12:16:49 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SVN / 1.4.0.522 / 1309b92a587d1c8fd55a2981c69ceadc1f79e79c
+2017.05.24 12:16:49 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarJS / 2.20.0.4207 / d65285af4c43250613fa9d176207aeda9176d20a
+2017.05.24 12:16:50 INFO  web[][o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2017.05.24 12:16:51 INFO  web[][o.s.s.n.NotificationDaemon] Notification service started (delay 60 sec.)
+2017.05.24 12:16:51 INFO  web[][o.s.s.s.RegisterMetrics] Register metrics
+2017.05.24 12:16:52 INFO  web[][o.s.s.r.RegisterRules] Register rules
+2017.05.24 12:16:55 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register quality profiles
+2017.05.24 12:16:57 INFO  web[][o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2017.05.24 12:16:57 INFO  web[][o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2017.05.24 12:16:57 INFO  web[][o.s.s.e.IndexerStartupTask] Index authorization
+2017.05.24 12:16:57 INFO  web[][o.s.s.e.IndexerStartupTask] Index issues
+2017.05.24 12:16:57 INFO  web[][o.s.s.e.IndexerStartupTask] Index tests
+2017.05.24 12:16:57 INFO  web[][o.s.s.e.IndexerStartupTask] Index users
+2017.05.24 12:16:57 INFO  web[][o.s.s.e.IndexerStartupTask] Index views
+2017.05.24 12:16:58 INFO  web[][o.s.s.e.IndexerStartupTask] Index project measures
+2017.05.24 12:16:58 INFO  web[][o.s.s.e.IndexerStartupTask] Index components
+2017.05.24 12:16:58 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LoginAction@6591c5fb [pattern=org.sonar.api.web.ServletFilter$UrlPattern@5fee7721]
+2017.05.24 12:16:58 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LogoutAction@66def6fa [pattern=org.sonar.api.web.ServletFilter$UrlPattern@d0b49c7]
+2017.05.24 12:16:58 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.ValidateAction@43e5bf75 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@529df8d5]
+2017.05.24 12:16:58 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.ws.WebServiceFilter@61abdb8a [pattern=org.sonar.api.web.ServletFilter$UrlPattern@3e38c2d4]
+2017.05.24 12:16:58 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.ws.DeprecatedPropertiesWsFilter@379cfdc2 [pattern=org.sonar.api.web.ServletFilter$UrlPattern@8d41730]
+2017.05.24 12:16:58 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@36ac526c [pattern=org.sonar.api.web.ServletFilter$UrlPattern@668edb96]
+2017.05.24 12:16:58 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@2cffd80f [pattern=org.sonar.api.web.ServletFilter$UrlPattern@7814c0ce]
+2017.05.24 12:16:58 INFO  web[][o.s.s.a.TomcatAccessLog] Web server is started
+2017.05.24 12:16:58 INFO  web[][o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+2017.05.24 17:08:47 INFO  web[][o.e.client.transport] [Radian] failed to connect to node [{#transport#-1}{127.0.0.1}{127.0.0.1:9001}], removed from nodes list
+org.elasticsearch.transport.ConnectTransportException: [][127.0.0.1:9001] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannelsLight(NettyTransport.java:967)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:933)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNodeLight(NettyTransport.java:906)
+	at org.elasticsearch.transport.TransportService.connectToNodeLight(TransportService.java:267)
+	at org.elasticsearch.client.transport.TransportClientNodesService$SimpleNodeSampler.doSample(TransportClientNodesService.java:390)
+	at org.elasticsearch.client.transport.TransportClientNodesService$NodeSampler.sample(TransportClientNodesService.java:336)
+	at org.elasticsearch.client.transport.TransportClientNodesService$ScheduledNodeSampler.run(TransportClientNodesService.java:369)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: /127.0.0.1:9001
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 common frames omitted
+2017.05.24 17:08:48 INFO  web[][o.s.s.n.NotificationDaemon] Notification service stopped
+2017.05.24 17:08:48 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database stopped
+2017.05.24 17:08:49 INFO  web[][o.s.s.a.TomcatAccessLog] Web server is stopped
