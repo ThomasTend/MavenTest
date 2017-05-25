@@ -1,0 +1,53 @@
+--> Wrapper Started as Daemon
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.25 17:18:47 INFO  app[o.s.a.AppFileSystem] Cleaning or creating temp directory /home/etentho/Developer/my-app/sonarqube-5.6.6/temp
+2017.05.25 17:18:47 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[es]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djava.net.preferIPv4Stack=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=/home/etentho/Developer/my-app/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/search/* org.sonar.search.SearchServer /home/etentho/Developer/my-app/sonarqube-5.6.6/temp/sq-process4188324165470960699properties
+2017.05.25 17:18:48 INFO   es[o.s.p.ProcessEntryPoint]  Starting es
+2017.05.25 17:18:48 INFO   es[o.s.s.EsSettings]  Elasticsearch listening on 127.0.0.1:9001
+2017.05.25 17:18:48 INFO   es[o.elasticsearch.node]  [sonar-1495747127389] version[1.7.5], pid[31767], build[00f95f4/2016-02-02T09:55:30Z]
+2017.05.25 17:18:48 INFO   es[o.elasticsearch.node]  [sonar-1495747127389] initializing ...
+2017.05.25 17:18:48 INFO   es[o.e.plugins]  [sonar-1495747127389] loaded [], sites []
+2017.05.25 17:18:48 INFO   es[o.elasticsearch.env]  [sonar-1495747127389] using [1] data paths, mounts [[/ (/dev/mapper/ubuntu--vg-root)]], net usable_space [134.4gb], net total_space [156.6gb], types [ext4]
+2017.05.25 17:18:49 WARN   es[o.e.bootstrap]  JNA not found. native methods will be disabled.
+2017.05.25 17:18:50 INFO   es[o.elasticsearch.node]  [sonar-1495747127389] initialized
+2017.05.25 17:18:50 INFO   es[o.elasticsearch.node]  [sonar-1495747127389] starting ...
+2017.05.25 17:18:50 WARN   es[o.s.p.ProcessEntryPoint]  Fail to start es
+org.elasticsearch.transport.BindTransportException: Failed to bind to [9001]
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:422) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.netty.NettyTransport.doStart(NettyTransport.java:283) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.TransportService.doStart(TransportService.java:153) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:257) ~[elasticsearch-1.7.5.jar:na]
+	at org.sonar.search.SearchServer.start(SearchServer.java:46) [sonar-search-5.6.6.jar:na]
+	at org.sonar.process.ProcessEntryPoint.launch(ProcessEntryPoint.java:102) ~[sonar-process-5.6.6.jar:na]
+	at org.sonar.search.SearchServer.main(SearchServer.java:81) [sonar-search-5.6.6.jar:na]
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /127.0.0.1:9001
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.netty.NettyTransport$1.onPortNumber(NettyTransport.java:413) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:409) ~[elasticsearch-1.7.5.jar:na]
+	... 8 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_131]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_131]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_131]
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) ~[elasticsearch-1.7.5.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+2017.05.25 17:18:50 INFO   es[o.elasticsearch.node]  [sonar-1495747127389] stopping ...
+2017.05.25 17:18:50 INFO   es[o.elasticsearch.node]  [sonar-1495747127389] stopped
+2017.05.25 17:18:50 INFO   es[o.elasticsearch.node]  [sonar-1495747127389] closing ...
+2017.05.25 17:18:50 INFO   es[o.elasticsearch.node]  [sonar-1495747127389] closed
+<-- Wrapper Stopped
