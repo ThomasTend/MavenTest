@@ -728,3 +728,183 @@ Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
 2017.05.29 09:47:39 INFO  ce[o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Wed Nov 30 09:47:39 EST 2016
 2017.05.29 09:47:39 INFO  ce[o.s.ce.app.CeServer] Compute Engine is up
 2017.05.29 09:47:40 INFO  app[o.s.p.m.Monitor] Process[ce] is up
+2017.05.29 09:50:22 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxUeMg4aU5jZXcn7MtB | submitter=admin
+2017.05.29 09:50:24 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxUeMg4aU5jZXcn7MtB | submitter=admin | time=1872ms
+2017.05.29 10:48:24 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxUresSaU5jZXcn7MtC | submitter=admin
+2017.05.29 10:48:26 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxUresSaU5jZXcn7MtC | submitter=admin | time=2335ms
+2017.05.29 10:48:34 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxUrhhUaU5jZXcn7MtD | submitter=admin
+2017.05.29 10:48:35 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxUrhhUaU5jZXcn7MtD | submitter=admin | time=803ms
+2017.05.29 12:14:13 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxU_H_JaU5jZXcn7MtF
+2017.05.29 12:14:13 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxU_H_JaU5jZXcn7MtF | time=831ms
+2017.05.29 12:17:40 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxU_6cUaU5jZXcn7MtG
+2017.05.29 12:17:40 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxU_6cUaU5jZXcn7MtG | time=764ms
+2017.05.29 12:18:54 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxVAMucaU5jZXcn7MtH
+2017.05.29 12:18:55 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxVAMucaU5jZXcn7MtH | time=742ms
+2017.05.29 12:19:39 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxVAXUfaU5jZXcn7MtI
+2017.05.29 12:19:40 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxVAXUfaU5jZXcn7MtI | time=733ms
+2017.05.29 12:20:32 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxVAkPxaU5jZXcn7MtJ
+2017.05.29 12:20:33 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxVAkPxaU5jZXcn7MtJ | time=637ms
+2017.05.29 13:42:12 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVTQhqaU5jZXcn7MtK | submitter=admin
+2017.05.29 13:42:13 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVTQhqaU5jZXcn7MtK | submitter=admin | time=812ms
+2017.05.29 13:42:21 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVTS6aaU5jZXcn7MtL | submitter=admin
+2017.05.29 13:42:21 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVTS6aaU5jZXcn7MtL | submitter=admin | time=611ms
+TERM trapped.  Shutting down.
+2017.05.29 14:28:58 INFO  app[o.s.p.m.Monitor] Process[ce] is stopping
+2017.05.29 14:28:58 INFO  ce[o.s.p.StopWatcher] Stopping process
+2017.05.29 14:28:58 INFO  ce[o.s.ce.app.CeServer] Compute Engine shutting down...
+2017.05.29 14:28:59 INFO  app[o.s.p.m.Monitor] Process[ce] is stopped
+2017.05.29 14:28:59 INFO  app[o.s.p.m.Monitor] Process[web] is stopping
+2017.05.29 14:28:59 INFO  web[o.s.p.StopWatcher] Stopping process
+2017.05.29 14:28:59 INFO  web[o.a.c.h.Http11NioProtocol] Pausing ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.05.29 14:29:00 INFO  web[o.s.s.n.NotificationService] Notification service stopped
+2017.05.29 14:29:01 INFO  web[o.s.s.d.EmbeddedDatabase] Embedded database stopped
+2017.05.29 14:29:01 INFO  web[o.a.c.h.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.05.29 14:29:02 INFO  web[o.a.c.h.Http11NioProtocol] Destroying ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.05.29 14:29:02 INFO  web[o.s.s.a.TomcatAccessLog] Web server is stopped
+2017.05.29 14:29:02 INFO  app[o.s.p.m.Monitor] Process[web] is stopped
+2017.05.29 14:29:02 INFO  app[o.s.p.m.Monitor] Process[es] is stopping
+2017.05.29 14:29:02 INFO   es[o.s.p.StopWatcher]  Stopping process
+2017.05.29 14:29:02 INFO   es[o.elasticsearch.node]  [sonar-1496065620850] stopping ...
+2017.05.29 14:29:02 INFO   es[o.elasticsearch.node]  [sonar-1496065620850] stopped
+2017.05.29 14:29:02 INFO   es[o.elasticsearch.node]  [sonar-1496065620850] closing ...
+2017.05.29 14:29:02 INFO   es[o.elasticsearch.node]  [sonar-1496065620850] closed
+2017.05.29 14:29:03 INFO  app[o.s.p.m.Monitor] Process[es] is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Daemon
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.29 14:29:34 INFO  app[o.s.a.AppFileSystem] Cleaning or creating temp directory /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp
+2017.05.29 14:29:34 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[es]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djava.net.preferIPv4Stack=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/search/* org.sonar.search.SearchServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process3881586371417501994properties
+2017.05.29 14:29:34 INFO   es[o.s.p.ProcessEntryPoint]  Starting es
+2017.05.29 14:29:34 INFO   es[o.s.s.EsSettings]  Elasticsearch listening on 127.0.0.1:9001
+2017.05.29 14:29:34 INFO   es[o.elasticsearch.node]  [sonar-1496082573939] version[1.7.5], pid[17483], build[00f95f4/2016-02-02T09:55:30Z]
+2017.05.29 14:29:34 INFO   es[o.elasticsearch.node]  [sonar-1496082573939] initializing ...
+2017.05.29 14:29:34 INFO   es[o.e.plugins]  [sonar-1496082573939] loaded [], sites []
+2017.05.29 14:29:34 INFO   es[o.elasticsearch.env]  [sonar-1496082573939] using [1] data paths, mounts [[/ (/dev/mapper/ubuntu--vg-root)]], net usable_space [133.7gb], net total_space [156.6gb], types [ext4]
+2017.05.29 14:29:36 WARN   es[o.e.bootstrap]  JNA not found. native methods will be disabled.
+2017.05.29 14:29:36 INFO   es[o.elasticsearch.node]  [sonar-1496082573939] initialized
+2017.05.29 14:29:36 INFO   es[o.elasticsearch.node]  [sonar-1496082573939] starting ...
+2017.05.29 14:29:36 INFO   es[o.e.transport]  [sonar-1496082573939] bound_address {inet[/127.0.0.1:9001]}, publish_address {inet[/127.0.0.1:9001]}
+2017.05.29 14:29:36 INFO   es[o.e.discovery]  [sonar-1496082573939] sonarqube/YNZBfbXcQdKNucGX66J6pg
+2017.05.29 14:29:39 INFO   es[o.e.cluster.service]  [sonar-1496082573939] new_master [sonar-1496082573939][YNZBfbXcQdKNucGX66J6pg][elx7434bfs9][inet[/127.0.0.1:9001]]{rack_id=sonar-1496082573939}, reason: zen-disco-join (elected_as_master)
+2017.05.29 14:29:40 INFO   es[o.elasticsearch.node]  [sonar-1496082573939] started
+2017.05.29 14:29:40 INFO   es[o.e.gateway]  [sonar-1496082573939] recovered [6] indices into cluster_state
+2017.05.29 14:29:43 INFO  app[o.s.p.m.Monitor] Process[es] is up
+2017.05.29 14:29:43 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[web]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djruby.management.enabled=false -Djruby.compile.invokedynamic=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/server/*:/home/etentho/Developer/MavenTest/sonarqube-5.6.6/lib/jdbc/h2/h2-1.3.176.jar org.sonar.server.app.WebServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process2584697824145635545properties
+2017.05.29 14:29:44 INFO  web[o.s.p.ProcessEntryPoint] Starting web
+2017.05.29 14:29:44 INFO  web[o.s.s.a.TomcatContexts] Webapp directory: /home/etentho/Developer/MavenTest/sonarqube-5.6.6/web
+2017.05.29 14:29:44 INFO  web[o.a.c.h.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.05.29 14:29:44 INFO  web[o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2017.05.29 14:29:45 INFO  web[o.s.s.p.ServerImpl] SonarQube Server / 5.6.6 / e8e13145497bb920921ae4fe11b09f0903f1d298
+2017.05.29 14:29:45 INFO  web[o.s.s.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://localhost:9092/sonar
+2017.05.29 14:29:45 INFO  web[o.s.s.d.EmbeddedDatabase] Embedded database started. Data stored in: /home/etentho/Developer/MavenTest/sonarqube-5.6.6/data
+2017.05.29 14:29:45 INFO  web[o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.29 14:29:45 WARN  web[o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.29 14:29:46 INFO  web[o.s.s.p.DefaultServerFileSystem] SonarQube home: /home/etentho/Developer/MavenTest/sonarqube-5.6.6
+2017.05.29 14:29:47 INFO  web[o.e.plugins] [sonar-1496082573939] loaded [], sites []
+2017.05.29 14:29:48 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin C# / 5.0 / 17ddb09047940791828dcb70c9e225f006ab11aa
+2017.05.29 14:29:48 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin Git / 1.2 / a713dd64daf8719ba4e7f551f9a1966c62690c17
+2017.05.29 14:29:48 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin Java / 3.13.1 / cf0f0c950ba3e83a87c7fe11c6ff7e63f4864bd9
+2017.05.29 14:29:48 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin JavaScript / 2.11 / a9b1afa9ceef7079811779d9efc5f8026acb1400
+2017.05.29 14:29:48 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin SVN / 1.3 / aff503d48bc77b07c2b62abf93249d0a20bd355c
+2017.05.29 14:29:48 INFO  web[o.s.s.p.RailsAppsDeployer] Deploying Ruby on Rails applications
+2017.05.29 14:29:49 INFO  web[o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2017.05.29 14:29:50 INFO  web[o.s.s.n.NotificationService] Notification service started (delay 60 sec.)
+2017.05.29 14:29:50 INFO  web[o.s.s.s.RegisterMetrics] Register metrics
+2017.05.29 14:29:50 INFO  web[o.s.s.r.RegisterRules] Register rules
+2017.05.29 14:29:52 INFO  web[o.s.s.q.RegisterQualityProfiles] Register quality profiles
+2017.05.29 14:29:53 INFO  web[o.s.s.s.RegisterNewMeasureFilters] Register measure filters
+2017.05.29 14:29:53 INFO  web[o.s.s.s.RegisterDashboards] Register dashboards
+2017.05.29 14:29:53 INFO  web[o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2017.05.29 14:29:53 INFO  web[o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2017.05.29 14:29:53 INFO  web[o.s.s.e.IndexerStartupTask] Index activities
+2017.05.29 14:29:54 INFO  web[o.s.s.e.IndexerStartupTask] Index issues
+2017.05.29 14:29:54 INFO  web[o.s.s.e.IndexerStartupTask] Index tests
+2017.05.29 14:29:54 INFO  web[o.s.s.e.IndexerStartupTask] Index users
+2017.05.29 14:29:54 INFO  web[o.s.s.e.IndexerStartupTask] Index views
+2017.05.29 14:29:54 INFO  web[jruby.rack] jruby 1.7.9 (ruby-1.8.7p370) 2013-12-06 87b108a on Java HotSpot(TM) 64-Bit Server VM 1.8.0_131-b11 [linux-amd64]
+2017.05.29 14:29:54 INFO  web[jruby.rack] using a shared (threadsafe!) runtime
+2017.05.29 14:30:04 INFO  web[jruby.rack] keeping custom (config.logger) Rails logger instance
+2017.05.29 14:30:04 INFO  web[o.a.c.u.SessionIdGeneratorBase] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [143] milliseconds.
+2017.05.29 14:30:04 INFO  web[o.s.s.p.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@70e02280 [pattern=/sessions/init/*]
+2017.05.29 14:30:04 INFO  web[o.s.s.p.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@7cddfa6e [pattern=/oauth2/callback/*]
+2017.05.29 14:30:04 INFO  web[o.a.c.h.Http11NioProtocol] Starting ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.05.29 14:30:04 INFO  web[o.s.s.a.TomcatAccessLog] Web server is started
+2017.05.29 14:30:04 INFO  web[o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+WARNING: while creating new bindings for class org.jruby.rack.RackInput,
+found an existing binding; you may want to run a clean build.
+WARNING: while creating new bindings for class org.jruby.rack.RackInput,
+found an existing binding; you may want to run a clean build.
+2017.05.29 14:30:05 INFO  app[o.s.p.m.Monitor] Process[web] is up
+2017.05.29 14:30:05 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[ce]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/server/*:./lib/ce/*:/home/etentho/Developer/MavenTest/sonarqube-5.6.6/lib/jdbc/h2/h2-1.3.176.jar org.sonar.ce.app.CeServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process2467460910526928919properties
+2017.05.29 14:30:06 INFO  ce[o.s.p.ProcessEntryPoint] Starting ce
+2017.05.29 14:30:06 INFO  ce[o.s.ce.app.CeServer] Compute Engine starting up...
+2017.05.29 14:30:07 INFO  ce[o.s.s.p.ServerImpl] SonarQube Server / 5.6.6 / e8e13145497bb920921ae4fe11b09f0903f1d298
+2017.05.29 14:30:07 INFO  ce[o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.29 14:30:07 WARN  ce[o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.29 14:30:09 INFO  ce[o.s.s.p.DefaultServerFileSystem] SonarQube home: /home/etentho/Developer/MavenTest/sonarqube-5.6.6
+2017.05.29 14:30:09 INFO  ce[o.e.plugins] [sonar-1496082573939] loaded [], sites []
+2017.05.29 14:30:09 INFO  ce[o.s.c.c.CePluginRepository] Load plugins
+2017.05.29 14:30:10 INFO  ce[o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Wed Nov 30 14:30:10 EST 2016
+2017.05.29 14:30:10 INFO  ce[o.s.ce.app.CeServer] Compute Engine is up
+2017.05.29 14:30:11 INFO  app[o.s.p.m.Monitor] Process[ce] is up
+2017.05.29 15:25:27 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVq5TZX1YyFYKs62OF | submitter=admin
+2017.05.29 15:25:29 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVq5TZX1YyFYKs62OF | submitter=admin | time=2099ms
+2017.05.29 15:26:18 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVrFtbX1YyFYKs62OG | submitter=admin
+2017.05.29 15:26:20 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVrFtbX1YyFYKs62OG | submitter=admin | time=2253ms
+2017.05.29 15:26:28 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVrIJgX1YyFYKs62OH | submitter=admin
+2017.05.29 15:26:29 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVrIJgX1YyFYKs62OH | submitter=admin | time=774ms
+2017.05.29 15:26:57 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxVrO5FX1YyFYKs62OI
+2017.05.29 15:26:57 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxVrO5FX1YyFYKs62OI | time=848ms
+2017.05.29 15:42:53 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVu4OzX1YyFYKs62OJ | submitter=admin
+2017.05.29 15:42:54 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVu4OzX1YyFYKs62OJ | submitter=admin | time=1060ms
+2017.05.29 15:43:02 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVu6qDX1YyFYKs62OK | submitter=admin
+2017.05.29 15:43:02 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVu6qDX1YyFYKs62OK | submitter=admin | time=836ms
+2017.05.29 15:50:59 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVwvRhX1YyFYKs62OL | submitter=admin
+2017.05.29 15:51:00 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVwvRhX1YyFYKs62OL | submitter=admin | time=831ms
+2017.05.29 15:53:20 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVxRppX1YyFYKs62OM | submitter=admin
+2017.05.29 15:53:21 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVxRppX1YyFYKs62OM | submitter=admin | time=847ms
+2017.05.29 15:55:19 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVxubmX1YyFYKs62ON | submitter=admin
+2017.05.29 15:55:19 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVxubmX1YyFYKs62ON | submitter=admin | time=665ms
+2017.05.29 15:55:22 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVxvGFX1YyFYKs62OO | submitter=admin
+2017.05.29 15:55:22 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVxvGFX1YyFYKs62OO | submitter=admin | time=745ms
+2017.05.29 15:55:32 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVxyH0X1YyFYKs62OP | submitter=admin
+2017.05.29 15:55:33 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxVxyH0X1YyFYKs62OP | submitter=admin | time=619ms
+2017.05.29 15:58:27 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxVyccLX1YyFYKs62OQ
+2017.05.29 15:58:28 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxVyccLX1YyFYKs62OQ | time=608ms
+2017.05.29 16:02:32 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxVzYkGX1YyFYKs62OR
+2017.05.29 16:02:33 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxVzYkGX1YyFYKs62OR | time=715ms
+2017.05.29 16:16:20 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxV2ihQX1YyFYKs62OS
+2017.05.29 16:16:20 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxV2ihQX1YyFYKs62OS | time=681ms
+2017.05.29 16:16:38 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV2m7aX1YyFYKs62OT | submitter=admin
+2017.05.29 16:16:39 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV2m7aX1YyFYKs62OT | submitter=admin | time=445ms
+2017.05.29 16:17:17 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV2wQtX1YyFYKs62OU | submitter=admin
+2017.05.29 16:17:18 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV2wQtX1YyFYKs62OU | submitter=admin | time=672ms
+2017.05.29 16:17:26 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV2yoJX1YyFYKs62OV | submitter=admin
+2017.05.29 16:17:26 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV2yoJX1YyFYKs62OV | submitter=admin | time=668ms
+2017.05.29 16:18:22 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV3AQNX1YyFYKs62OW | submitter=admin
+2017.05.29 16:18:23 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV3AQNX1YyFYKs62OW | submitter=admin | time=728ms
+2017.05.29 16:18:57 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxV3IpkX1YyFYKs62OX
+2017.05.29 16:18:58 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxV3IpkX1YyFYKs62OX | time=694ms
+2017.05.29 16:50:06 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxV-RFRX1YyFYKs62OY
+2017.05.29 16:50:07 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxV-RFRX1YyFYKs62OY | time=571ms
+2017.05.29 16:51:19 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV-iuDX1YyFYKs62OZ | submitter=admin
+2017.05.29 16:51:19 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV-iuDX1YyFYKs62OZ | submitter=admin | time=651ms
+2017.05.29 16:52:53 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV-55gX1YyFYKs62Oa | submitter=admin
+2017.05.29 16:52:54 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxV-55gX1YyFYKs62Oa | submitter=admin | time=480ms
+2017.05.29 16:52:56 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxV-6bgX1YyFYKs62Ob
+2017.05.29 16:52:56 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxV-6bgX1YyFYKs62Ob | time=634ms
+2017.05.29 16:53:38 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxV_E2-X1YyFYKs62Oc
+2017.05.29 16:53:39 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxV_E2-X1YyFYKs62Oc | time=636ms
+2017.05.29 17:02:48 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxWBLUaX1YyFYKs62Od | submitter=admin
+2017.05.29 17:02:48 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxWBLUaX1YyFYKs62Od | submitter=admin | time=462ms
+2017.05.29 17:08:56 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=GradleTest | type=REPORT | id=AVxWCk82X1YyFYKs62Oe
+2017.05.29 17:08:57 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=GradleTest | type=REPORT | id=AVxWCk82X1YyFYKs62Oe | time=749ms
+2017.05.29 17:08:59 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxWCltQX1YyFYKs62Of | submitter=admin
+2017.05.29 17:09:00 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxWCltQX1YyFYKs62Of | submitter=admin | time=608ms
+2017.05.29 17:09:06 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxWCnOVX1YyFYKs62Og | submitter=admin
+2017.05.29 17:09:06 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxWCnOVX1YyFYKs62Og | submitter=admin | time=467ms
+2017.05.29 17:09:10 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxWComGX1YyFYKs62Oh | submitter=admin
+2017.05.29 17:09:11 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxWComGX1YyFYKs62Oh | submitter=admin | time=517ms
