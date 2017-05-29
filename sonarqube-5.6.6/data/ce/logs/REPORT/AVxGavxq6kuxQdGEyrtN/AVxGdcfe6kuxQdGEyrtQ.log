@@ -1,0 +1,98 @@
+2017.05.26 16:32:24 INFO  [o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGdcfe6kuxQdGEyrtQ | submitter=admin
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.ExtractReportStep] Analysis report extracted | compressedSize=8 KB
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.ComputationStepExecutor] Extract report | time=6ms
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep] SonarQube plugins:
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - C# 5.0 (csharp)
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - Java 3.13.1 (java)
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - SVN 1.3 (scmsvn)
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - Git 1.2 (scmgit)
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - JavaScript 2.11 (javascript)
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep] Global properties:
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.core.id=20170526161530
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.core.startTime=2017-05-26T16:15:30-0400
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.core.version=5.6.6
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.permission.template.default=default_template
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.qualitygate=1
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep] Settings for module: com.mycompany.app:my-app
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.binaries=/var/lib/jenkins/workspace/MavenTest/target/classes
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.groovy.binaries=/var/lib/jenkins/workspace/MavenTest/target/classes
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.host.url=http://localhost:9000
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.java.binaries=/var/lib/jenkins/workspace/MavenTest/target/classes
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.java.libraries=/var/lib/jenkins/.m2/repository/org/sonarsource/scanner/api/sonar-scanner-api/2.7/sonar-scanner-api-2.7.jar
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.java.source=1.5
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.java.target=1.5
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.java.test.binaries=/var/lib/jenkins/workspace/MavenTest/target/test-classes
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.java.test.libraries=/var/lib/jenkins/workspace/MavenTest/target/classes,/var/lib/jenkins/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar,/var/lib/jenkins/.m2/repository/org/sonarsource/scanner/api/sonar-scanner-api/2.7/sonar-scanner-api-2.7.jar
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.junit.reportsPath=/var/lib/jenkins/workspace/MavenTest/target/surefire-reports
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.libraries=/var/lib/jenkins/.m2/repository/org/sonarsource/scanner/api/sonar-scanner-api/2.7/sonar-scanner-api-2.7.jar
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.links.ci=
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.links.homepage=http://maven.apache.org
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.links.issue=
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.links.scm=
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.links.scm_dev=
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.login=******
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.maven.projectDependencies=[{"k":"junit:junit","v":"3.8.1","s":"test","d":[]},{"k":"org.sonarsource.scanner.api:sonar-scanner-api","v":"2.7","s":"compile","d":[]}]
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.moduleKey=com.mycompany.app:my-app
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.password=******
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.projectBaseDir=/var/lib/jenkins/workspace/MavenTest
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.projectBuildDir=/var/lib/jenkins/workspace/MavenTest/target
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.projectKey=com.mycompany.app:my-app
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.projectName=my-app
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.projectVersion=1.0-SNAPSHOT
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.sourceEncoding=UTF-8
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.sources=/var/lib/jenkins/workspace/MavenTest/pom.xml,/var/lib/jenkins/workspace/MavenTest/src/main/java
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.tests=/var/lib/jenkins/workspace/MavenTest/src/test/java
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.LogScannerContextStep]   - sonar.working.directory=/var/lib/jenkins/workspace/MavenTest/target/sonar
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.ComputationStepExecutor] Log scanner context | time=5ms
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.ComputationStepExecutor] Load analysis metadata | time=1ms
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.ComputationStepExecutor] Build tree of components | time=8ms
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.ComputationStepExecutor] Validate project | time=3ms
+2017.05.26 16:32:24 INFO  [o.s.s.c.s.ComputationStepExecutor] Load quality profiles | time=301ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Load Quality gate | time=4ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Load differential periods | time=31ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Load inner file and in project duplications | time=1ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.d.CrossProjectDuplicationStatusHolderImpl] Cross project duplication is disabled because it's disabled in the analysis report
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute cross project duplications | time=0ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute size measures | time=3ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute new coverage | time=21ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute coverage measures | time=1ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute comment measures | time=1ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Copy custom measures | time=4ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute duplication measures | time=1ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute duplication data measures | time=1ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute language distribution | time=0ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute test measures | time=1ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute complexity measures | time=4ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Load measure computers | time=0ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   Execution time for each component visitor:
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - LoadComponentUuidsHavingOpenIssuesVisitor | time=2ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - IntegrateIssuesVisitor | time=28ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - CloseIssuesOnRemovedComponentsVisitor | time=1ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - QualityModelMeasuresVisitor | time=0ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - NewQualityModelMeasuresVisitor | time=1ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - LastCommitVisitor | time=0ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ExecuteVisitorsStep]   - MeasureComputersVisitor | time=0ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Execute component visitors | time=34ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute measure variations | time=83ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute Quality Gate measures | time=1ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Compute Quality profile measures | time=0ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Generate Quality profile events | time=3ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Generate Quality gate events | time=1ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist components | time=5ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist snapshots | time=6ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist measures | time=116ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist issues | time=5ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist project links | time=3ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist events | time=5ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist sources | time=25ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist tests | time=7ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Persist cross project duplications index | time=0ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Enable snapshot | time=16ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Index components | time=19ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Purge db | time=65ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Apply permissions | time=2ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Index issues | time=24ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Index tests | time=41ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Send issue notifications | time=5ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.s.ComputationStepExecutor] Publish task results | time=0ms
+2017.05.26 16:32:25 INFO  [o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGdcfe6kuxQdGEyrtQ | submitter=admin | time=996ms

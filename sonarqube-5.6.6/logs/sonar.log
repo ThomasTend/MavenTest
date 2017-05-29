@@ -438,3 +438,293 @@ Caused by: java.net.BindException: Address already in use
 2017.05.26 16:00:27 INFO   es[o.elasticsearch.node]  [sonar-1495828824089] closing ...
 2017.05.26 16:00:27 INFO   es[o.elasticsearch.node]  [sonar-1495828824089] closed
 <-- Wrapper Stopped
+--> Wrapper Started as Daemon
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.26 16:06:18 INFO  app[o.s.a.AppFileSystem] Cleaning or creating temp directory /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp
+2017.05.26 16:06:18 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[es]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djava.net.preferIPv4Stack=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/search/* org.sonar.search.SearchServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process9010611605535166470properties
+2017.05.26 16:06:19 INFO   es[o.s.p.ProcessEntryPoint]  Starting es
+2017.05.26 16:06:19 INFO   es[o.s.s.EsSettings]  Elasticsearch listening on 127.0.0.1:9001
+2017.05.26 16:06:19 INFO   es[o.elasticsearch.node]  [sonar-1495829178462] version[1.7.5], pid[28534], build[00f95f4/2016-02-02T09:55:30Z]
+2017.05.26 16:06:19 INFO   es[o.elasticsearch.node]  [sonar-1495829178462] initializing ...
+2017.05.26 16:06:19 INFO   es[o.e.plugins]  [sonar-1495829178462] loaded [], sites []
+2017.05.26 16:06:19 INFO   es[o.elasticsearch.env]  [sonar-1495829178462] using [1] data paths, mounts [[/ (/dev/mapper/ubuntu--vg-root)]], net usable_space [134.4gb], net total_space [156.6gb], types [ext4]
+2017.05.26 16:06:20 WARN   es[o.e.bootstrap]  JNA not found. native methods will be disabled.
+2017.05.26 16:06:21 INFO   es[o.elasticsearch.node]  [sonar-1495829178462] initialized
+2017.05.26 16:06:21 INFO   es[o.elasticsearch.node]  [sonar-1495829178462] starting ...
+2017.05.26 16:06:21 WARN   es[o.s.p.ProcessEntryPoint]  Fail to start es
+org.elasticsearch.transport.BindTransportException: Failed to bind to [9001]
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:422) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.netty.NettyTransport.doStart(NettyTransport.java:283) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.TransportService.doStart(TransportService.java:153) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:257) ~[elasticsearch-1.7.5.jar:na]
+	at org.sonar.search.SearchServer.start(SearchServer.java:46) [sonar-search-5.6.6.jar:na]
+	at org.sonar.process.ProcessEntryPoint.launch(ProcessEntryPoint.java:102) ~[sonar-process-5.6.6.jar:na]
+	at org.sonar.search.SearchServer.main(SearchServer.java:81) [sonar-search-5.6.6.jar:na]
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /127.0.0.1:9001
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.netty.NettyTransport$1.onPortNumber(NettyTransport.java:413) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:409) ~[elasticsearch-1.7.5.jar:na]
+	... 8 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_131]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_131]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_131]
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) ~[elasticsearch-1.7.5.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+2017.05.26 16:06:21 INFO   es[o.elasticsearch.node]  [sonar-1495829178462] stopping ...
+2017.05.26 16:06:21 INFO   es[o.elasticsearch.node]  [sonar-1495829178462] stopped
+2017.05.26 16:06:21 INFO   es[o.elasticsearch.node]  [sonar-1495829178462] closing ...
+2017.05.26 16:06:21 INFO   es[o.elasticsearch.node]  [sonar-1495829178462] closed
+<-- Wrapper Stopped
+--> Wrapper Started as Daemon
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.26 16:09:17 INFO  app[o.s.a.AppFileSystem] Cleaning or creating temp directory /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp
+2017.05.26 16:09:17 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[es]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djava.net.preferIPv4Stack=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/search/* org.sonar.search.SearchServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process5301129763265025538properties
+2017.05.26 16:09:18 INFO   es[o.s.p.ProcessEntryPoint]  Starting es
+2017.05.26 16:09:18 INFO   es[o.s.s.EsSettings]  Elasticsearch listening on 127.0.0.1:9001
+2017.05.26 16:09:18 INFO   es[o.elasticsearch.node]  [sonar-1495829357483] version[1.7.5], pid[28986], build[00f95f4/2016-02-02T09:55:30Z]
+2017.05.26 16:09:18 INFO   es[o.elasticsearch.node]  [sonar-1495829357483] initializing ...
+2017.05.26 16:09:18 INFO   es[o.e.plugins]  [sonar-1495829357483] loaded [], sites []
+2017.05.26 16:09:18 INFO   es[o.elasticsearch.env]  [sonar-1495829357483] using [1] data paths, mounts [[/ (/dev/mapper/ubuntu--vg-root)]], net usable_space [134.4gb], net total_space [156.6gb], types [ext4]
+2017.05.26 16:09:19 WARN   es[o.e.bootstrap]  JNA not found. native methods will be disabled.
+2017.05.26 16:09:20 INFO   es[o.elasticsearch.node]  [sonar-1495829357483] initialized
+2017.05.26 16:09:20 INFO   es[o.elasticsearch.node]  [sonar-1495829357483] starting ...
+2017.05.26 16:09:20 WARN   es[o.s.p.ProcessEntryPoint]  Fail to start es
+org.elasticsearch.transport.BindTransportException: Failed to bind to [9001]
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:422) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.netty.NettyTransport.doStart(NettyTransport.java:283) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.TransportService.doStart(TransportService.java:153) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:85) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.node.internal.InternalNode.start(InternalNode.java:257) ~[elasticsearch-1.7.5.jar:na]
+	at org.sonar.search.SearchServer.start(SearchServer.java:46) [sonar-search-5.6.6.jar:na]
+	at org.sonar.process.ProcessEntryPoint.launch(ProcessEntryPoint.java:102) ~[sonar-process-5.6.6.jar:na]
+	at org.sonar.search.SearchServer.main(SearchServer.java:81) [sonar-search-5.6.6.jar:na]
+Caused by: org.elasticsearch.common.netty.channel.ChannelException: Failed to bind to: /127.0.0.1:9001
+	at org.elasticsearch.common.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.netty.NettyTransport$1.onPortNumber(NettyTransport.java:413) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.transport.PortsRange.iterate(PortsRange.java:58) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.transport.netty.NettyTransport.bindServerBootstrap(NettyTransport.java:409) ~[elasticsearch-1.7.5.jar:na]
+	... 8 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_131]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_131]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_131]
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[elasticsearch-1.7.5.jar:na]
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) ~[elasticsearch-1.7.5.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+2017.05.26 16:09:20 INFO   es[o.elasticsearch.node]  [sonar-1495829357483] stopping ...
+2017.05.26 16:09:20 INFO   es[o.elasticsearch.node]  [sonar-1495829357483] stopped
+2017.05.26 16:09:20 INFO   es[o.elasticsearch.node]  [sonar-1495829357483] closing ...
+2017.05.26 16:09:20 INFO   es[o.elasticsearch.node]  [sonar-1495829357483] closed
+<-- Wrapper Stopped
+--> Wrapper Started as Daemon
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.26 16:15:30 INFO  app[o.s.a.AppFileSystem] Cleaning or creating temp directory /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp
+2017.05.26 16:15:30 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[es]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djava.net.preferIPv4Stack=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/search/* org.sonar.search.SearchServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process2416616028271777569properties
+2017.05.26 16:15:30 INFO   es[o.s.p.ProcessEntryPoint]  Starting es
+2017.05.26 16:15:30 INFO   es[o.s.s.EsSettings]  Elasticsearch listening on 127.0.0.1:9001
+2017.05.26 16:15:30 INFO   es[o.elasticsearch.node]  [sonar-1495829730123] version[1.7.5], pid[29490], build[00f95f4/2016-02-02T09:55:30Z]
+2017.05.26 16:15:30 INFO   es[o.elasticsearch.node]  [sonar-1495829730123] initializing ...
+2017.05.26 16:15:31 INFO   es[o.e.plugins]  [sonar-1495829730123] loaded [], sites []
+2017.05.26 16:15:31 INFO   es[o.elasticsearch.env]  [sonar-1495829730123] using [1] data paths, mounts [[/ (/dev/mapper/ubuntu--vg-root)]], net usable_space [134.6gb], net total_space [156.6gb], types [ext4]
+2017.05.26 16:15:32 WARN   es[o.e.bootstrap]  JNA not found. native methods will be disabled.
+2017.05.26 16:15:32 INFO   es[o.elasticsearch.node]  [sonar-1495829730123] initialized
+2017.05.26 16:15:32 INFO   es[o.elasticsearch.node]  [sonar-1495829730123] starting ...
+2017.05.26 16:15:33 INFO   es[o.e.transport]  [sonar-1495829730123] bound_address {inet[/127.0.0.1:9001]}, publish_address {inet[/127.0.0.1:9001]}
+2017.05.26 16:15:33 INFO   es[o.e.discovery]  [sonar-1495829730123] sonarqube/KisviB7iT_ihZmGzsyiSxg
+2017.05.26 16:15:36 INFO   es[o.e.cluster.service]  [sonar-1495829730123] new_master [sonar-1495829730123][KisviB7iT_ihZmGzsyiSxg][elx7434bfs9][inet[/127.0.0.1:9001]]{rack_id=sonar-1495829730123}, reason: zen-disco-join (elected_as_master)
+2017.05.26 16:15:36 INFO   es[o.elasticsearch.node]  [sonar-1495829730123] started
+2017.05.26 16:15:36 INFO   es[o.e.gateway]  [sonar-1495829730123] recovered [6] indices into cluster_state
+2017.05.26 16:15:39 INFO  app[o.s.p.m.Monitor] Process[es] is up
+2017.05.26 16:15:39 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[web]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djruby.management.enabled=false -Djruby.compile.invokedynamic=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/server/*:/home/etentho/Developer/MavenTest/sonarqube-5.6.6/lib/jdbc/h2/h2-1.3.176.jar org.sonar.server.app.WebServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process9118145850868763852properties
+2017.05.26 16:15:39 INFO  web[o.s.p.ProcessEntryPoint] Starting web
+2017.05.26 16:15:39 INFO  web[o.s.s.a.TomcatContexts] Webapp directory: /home/etentho/Developer/MavenTest/sonarqube-5.6.6/web
+2017.05.26 16:15:40 INFO  web[o.a.c.h.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.05.26 16:15:40 INFO  web[o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2017.05.26 16:15:40 INFO  web[o.s.s.p.ServerImpl] SonarQube Server / 5.6.6 / e8e13145497bb920921ae4fe11b09f0903f1d298
+2017.05.26 16:15:44 INFO  web[o.s.s.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://localhost:9092/sonar
+2017.05.26 16:15:44 INFO  web[o.s.s.d.EmbeddedDatabase] Embedded database started. Data stored in: /home/etentho/Developer/MavenTest/sonarqube-5.6.6/data
+2017.05.26 16:15:44 INFO  web[o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.26 16:15:44 WARN  web[o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.26 16:15:45 INFO  web[o.s.s.p.DefaultServerFileSystem] SonarQube home: /home/etentho/Developer/MavenTest/sonarqube-5.6.6
+2017.05.26 16:15:45 INFO  web[o.e.plugins] [sonar-1495829730123] loaded [], sites []
+2017.05.26 16:15:46 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin C# / 5.0 / 17ddb09047940791828dcb70c9e225f006ab11aa
+2017.05.26 16:15:46 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin Git / 1.2 / a713dd64daf8719ba4e7f551f9a1966c62690c17
+2017.05.26 16:15:46 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin Java / 3.13.1 / cf0f0c950ba3e83a87c7fe11c6ff7e63f4864bd9
+2017.05.26 16:15:46 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin JavaScript / 2.11 / a9b1afa9ceef7079811779d9efc5f8026acb1400
+2017.05.26 16:15:46 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin SVN / 1.3 / aff503d48bc77b07c2b62abf93249d0a20bd355c
+2017.05.26 16:15:47 INFO  web[o.s.s.p.RailsAppsDeployer] Deploying Ruby on Rails applications
+2017.05.26 16:15:48 INFO  web[o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2017.05.26 16:15:48 INFO  web[o.s.s.n.NotificationService] Notification service started (delay 60 sec.)
+2017.05.26 16:15:48 INFO  web[o.s.s.s.RegisterMetrics] Register metrics
+2017.05.26 16:15:48 INFO  web[o.s.s.r.RegisterRules] Register rules
+2017.05.26 16:15:51 INFO  web[o.s.s.q.RegisterQualityProfiles] Register quality profiles
+2017.05.26 16:15:52 INFO  web[o.s.s.s.RegisterNewMeasureFilters] Register measure filters
+2017.05.26 16:15:52 INFO  web[o.s.s.s.RegisterDashboards] Register dashboards
+2017.05.26 16:15:52 INFO  web[o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2017.05.26 16:15:52 INFO  web[o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2017.05.26 16:15:52 INFO  web[o.s.s.e.IndexerStartupTask] Index activities
+2017.05.26 16:15:52 INFO  web[o.s.s.e.IndexerStartupTask] Index issues
+2017.05.26 16:15:52 INFO  web[o.s.s.e.IndexerStartupTask] Index tests
+2017.05.26 16:15:52 INFO  web[o.s.s.e.IndexerStartupTask] Index users
+2017.05.26 16:15:52 INFO  web[o.s.s.e.IndexerStartupTask] Index views
+2017.05.26 16:15:52 INFO  web[jruby.rack] jruby 1.7.9 (ruby-1.8.7p370) 2013-12-06 87b108a on Java HotSpot(TM) 64-Bit Server VM 1.8.0_131-b11 [linux-amd64]
+2017.05.26 16:15:52 INFO  web[jruby.rack] using a shared (threadsafe!) runtime
+2017.05.26 16:16:02 INFO  web[jruby.rack] keeping custom (config.logger) Rails logger instance
+2017.05.26 16:16:03 INFO  web[o.s.s.p.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@344f8be3 [pattern=/sessions/init/*]
+2017.05.26 16:16:03 INFO  web[o.s.s.p.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@5e13fe3c [pattern=/oauth2/callback/*]
+2017.05.26 16:16:03 INFO  web[o.a.c.h.Http11NioProtocol] Starting ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.05.26 16:16:03 INFO  web[o.s.s.a.TomcatAccessLog] Web server is started
+2017.05.26 16:16:03 INFO  web[o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+2017.05.26 16:16:03 INFO  app[o.s.p.m.Monitor] Process[web] is up
+2017.05.26 16:16:03 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[ce]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/server/*:./lib/ce/*:/home/etentho/Developer/MavenTest/sonarqube-5.6.6/lib/jdbc/h2/h2-1.3.176.jar org.sonar.ce.app.CeServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process147898199017546854properties
+2017.05.26 16:16:04 INFO  ce[o.s.p.ProcessEntryPoint] Starting ce
+2017.05.26 16:16:04 INFO  ce[o.s.ce.app.CeServer] Compute Engine starting up...
+2017.05.26 16:16:05 INFO  ce[o.s.s.p.ServerImpl] SonarQube Server / 5.6.6 / e8e13145497bb920921ae4fe11b09f0903f1d298
+2017.05.26 16:16:05 INFO  ce[o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.26 16:16:05 WARN  ce[o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.26 16:16:06 INFO  ce[o.s.s.p.DefaultServerFileSystem] SonarQube home: /home/etentho/Developer/MavenTest/sonarqube-5.6.6
+2017.05.26 16:16:06 INFO  ce[o.e.plugins] [sonar-1495829730123] loaded [], sites []
+2017.05.26 16:16:07 INFO  ce[o.s.c.c.CePluginRepository] Load plugins
+2017.05.26 16:16:08 INFO  ce[o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Sun Nov 27 16:16:08 EST 2016
+2017.05.26 16:16:08 INFO  ce[o.s.ce.app.CeServer] Compute Engine is up
+2017.05.26 16:16:08 INFO  app[o.s.p.m.Monitor] Process[ce] is up
+2017.05.26 16:20:36 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGavzG6kuxQdGEyrtO | submitter=admin
+2017.05.26 16:20:40 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGavzG6kuxQdGEyrtO | submitter=admin | time=3501ms
+2017.05.26 16:22:48 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGbQLU6kuxQdGEyrtP | submitter=admin
+2017.05.26 16:22:49 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGbQLU6kuxQdGEyrtP | submitter=admin | time=1425ms
+2017.05.26 16:32:24 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGdcfe6kuxQdGEyrtQ | submitter=admin
+2017.05.26 16:32:25 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGdcfe6kuxQdGEyrtQ | submitter=admin | time=997ms
+2017.05.26 16:34:57 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGeB_X6kuxQdGEyrtR | submitter=admin
+2017.05.26 16:34:58 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGeB_X6kuxQdGEyrtR | submitter=admin | time=875ms
+2017.05.26 16:39:00 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGe9dP6kuxQdGEyrtS | submitter=admin
+2017.05.26 16:39:01 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGe9dP6kuxQdGEyrtS | submitter=admin | time=1010ms
+2017.05.26 16:39:11 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGe_-T6kuxQdGEyrtT | submitter=admin
+2017.05.26 16:39:12 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGe_-T6kuxQdGEyrtT | submitter=admin | time=822ms
+2017.05.26 16:44:09 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGgIX86kuxQdGEyrtU | submitter=admin
+2017.05.26 16:44:09 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGgIX86kuxQdGEyrtU | submitter=admin | time=887ms
+2017.05.26 16:54:26 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGifVC6kuxQdGEyrtV | submitter=admin
+2017.05.26 16:54:27 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGifVC6kuxQdGEyrtV | submitter=admin | time=764ms
+2017.05.26 17:11:44 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGmcw06kuxQdGEyrtW | submitter=admin
+2017.05.26 17:11:45 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGmcw06kuxQdGEyrtW | submitter=admin | time=724ms
+2017.05.26 17:12:05 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Execute task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGmhnq6kuxQdGEyrtX | submitter=admin
+2017.05.26 17:12:05 INFO  ce[o.s.s.c.t.CeWorkerCallableImpl] Executed task | project=com.mycompany.app:my-app | type=REPORT | id=AVxGmhnq6kuxQdGEyrtX | submitter=admin | time=528ms
+TERM trapped.  Shutting down.
+2017.05.26 17:23:18 INFO   es[o.elasticsearch.node]  [sonar-1495829730123] stopping ...
+2017.05.26 17:23:18 INFO  ce[o.s.ce.app.CeServer] Compute Engine shutting down...
+2017.05.26 17:23:18 INFO   es[o.elasticsearch.node]  [sonar-1495829730123] stopped
+2017.05.26 17:23:18 INFO   es[o.elasticsearch.node]  [sonar-1495829730123] closing ...
+2017.05.26 17:23:18 INFO   es[o.elasticsearch.node]  [sonar-1495829730123] closed
+2017.05.26 17:23:18 INFO  app[o.s.p.m.Monitor] Process[ce] is stopping
+2017.05.26 17:23:19 INFO  web[o.s.s.n.NotificationService] Notification service stopped
+2017.05.26 17:23:19 INFO  web[o.s.s.d.EmbeddedDatabase] Embedded database stopped
+2017.05.26 17:23:19 INFO  app[o.s.p.m.Monitor] Process[ce] is stopped
+2017.05.26 17:23:19 INFO  app[o.s.p.m.Monitor] Process[web] is stopping
+2017.05.26 17:23:20 INFO  web[o.s.s.a.TomcatAccessLog] Web server is stopped
+2017.05.26 17:23:20 INFO  app[o.s.p.m.Monitor] Process[web] is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Daemon
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2017.05.29 09:47:01 INFO  app[o.s.a.AppFileSystem] Cleaning or creating temp directory /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp
+2017.05.29 09:47:01 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[es]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Xmx1G -Xms256m -Xss256k -Djava.net.preferIPv4Stack=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/search/* org.sonar.search.SearchServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process6787071468274472020properties
+2017.05.29 09:47:01 INFO   es[o.s.p.ProcessEntryPoint]  Starting es
+2017.05.29 09:47:01 INFO   es[o.s.s.EsSettings]  Elasticsearch listening on 127.0.0.1:9001
+2017.05.29 09:47:01 INFO   es[o.elasticsearch.node]  [sonar-1496065620850] version[1.7.5], pid[5261], build[00f95f4/2016-02-02T09:55:30Z]
+2017.05.29 09:47:01 INFO   es[o.elasticsearch.node]  [sonar-1496065620850] initializing ...
+2017.05.29 09:47:01 INFO   es[o.e.plugins]  [sonar-1496065620850] loaded [], sites []
+2017.05.29 09:47:02 INFO   es[o.elasticsearch.env]  [sonar-1496065620850] using [1] data paths, mounts [[/ (/dev/mapper/ubuntu--vg-root)]], net usable_space [134.1gb], net total_space [156.6gb], types [ext4]
+2017.05.29 09:47:03 WARN   es[o.e.bootstrap]  JNA not found. native methods will be disabled.
+2017.05.29 09:47:04 INFO   es[o.elasticsearch.node]  [sonar-1496065620850] initialized
+2017.05.29 09:47:04 INFO   es[o.elasticsearch.node]  [sonar-1496065620850] starting ...
+2017.05.29 09:47:04 INFO   es[o.e.transport]  [sonar-1496065620850] bound_address {inet[/127.0.0.1:9001]}, publish_address {inet[/127.0.0.1:9001]}
+2017.05.29 09:47:04 INFO   es[o.e.discovery]  [sonar-1496065620850] sonarqube/34BUBJ2YTWy67aEC4FWMVw
+2017.05.29 09:47:07 INFO   es[o.e.cluster.service]  [sonar-1496065620850] new_master [sonar-1496065620850][34BUBJ2YTWy67aEC4FWMVw][elx7434bfs9][inet[/127.0.0.1:9001]]{rack_id=sonar-1496065620850}, reason: zen-disco-join (elected_as_master)
+2017.05.29 09:47:07 INFO   es[o.elasticsearch.node]  [sonar-1496065620850] started
+2017.05.29 09:47:07 INFO   es[o.e.gateway]  [sonar-1496065620850] recovered [6] indices into cluster_state
+2017.05.29 09:47:10 INFO  app[o.s.p.m.Monitor] Process[es] is up
+2017.05.29 09:47:10 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[web]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djruby.management.enabled=false -Djruby.compile.invokedynamic=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/server/*:/home/etentho/Developer/MavenTest/sonarqube-5.6.6/lib/jdbc/h2/h2-1.3.176.jar org.sonar.server.app.WebServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process2299867197673640865properties
+2017.05.29 09:47:10 INFO  web[o.s.p.ProcessEntryPoint] Starting web
+2017.05.29 09:47:11 INFO  web[o.s.s.a.TomcatContexts] Webapp directory: /home/etentho/Developer/MavenTest/sonarqube-5.6.6/web
+2017.05.29 09:47:11 INFO  web[o.a.c.h.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.05.29 09:47:11 INFO  web[o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2017.05.29 09:47:12 INFO  web[o.s.s.p.ServerImpl] SonarQube Server / 5.6.6 / e8e13145497bb920921ae4fe11b09f0903f1d298
+2017.05.29 09:47:12 INFO  web[o.s.s.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://localhost:9092/sonar
+2017.05.29 09:47:12 INFO  web[o.s.s.d.EmbeddedDatabase] Embedded database started. Data stored in: /home/etentho/Developer/MavenTest/sonarqube-5.6.6/data
+2017.05.29 09:47:12 INFO  web[o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.29 09:47:12 WARN  web[o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.29 09:47:13 INFO  web[o.s.s.p.DefaultServerFileSystem] SonarQube home: /home/etentho/Developer/MavenTest/sonarqube-5.6.6
+2017.05.29 09:47:14 INFO  web[o.e.plugins] [sonar-1496065620850] loaded [], sites []
+2017.05.29 09:47:15 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin C# / 5.0 / 17ddb09047940791828dcb70c9e225f006ab11aa
+2017.05.29 09:47:15 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin Git / 1.2 / a713dd64daf8719ba4e7f551f9a1966c62690c17
+2017.05.29 09:47:15 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin Java / 3.13.1 / cf0f0c950ba3e83a87c7fe11c6ff7e63f4864bd9
+2017.05.29 09:47:15 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin JavaScript / 2.11 / a9b1afa9ceef7079811779d9efc5f8026acb1400
+2017.05.29 09:47:15 INFO  web[o.s.s.p.ServerPluginRepository] Deploy plugin SVN / 1.3 / aff503d48bc77b07c2b62abf93249d0a20bd355c
+2017.05.29 09:47:15 INFO  web[o.s.s.p.RailsAppsDeployer] Deploying Ruby on Rails applications
+2017.05.29 09:47:16 INFO  web[o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2017.05.29 09:47:16 INFO  web[o.s.s.n.NotificationService] Notification service started (delay 60 sec.)
+2017.05.29 09:47:16 INFO  web[o.s.s.s.RegisterMetrics] Register metrics
+2017.05.29 09:47:17 INFO  web[o.s.s.r.RegisterRules] Register rules
+2017.05.29 09:47:20 INFO  web[o.s.s.q.RegisterQualityProfiles] Register quality profiles
+2017.05.29 09:47:21 INFO  web[o.s.s.s.RegisterNewMeasureFilters] Register measure filters
+2017.05.29 09:47:21 INFO  web[o.s.s.s.RegisterDashboards] Register dashboards
+2017.05.29 09:47:21 INFO  web[o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2017.05.29 09:47:21 INFO  web[o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2017.05.29 09:47:21 INFO  web[o.s.s.e.IndexerStartupTask] Index activities
+2017.05.29 09:47:21 INFO  web[o.s.s.e.IndexerStartupTask] Index issues
+2017.05.29 09:47:21 INFO  web[o.s.s.e.IndexerStartupTask] Index tests
+2017.05.29 09:47:21 INFO  web[o.s.s.e.IndexerStartupTask] Index users
+2017.05.29 09:47:22 INFO  web[o.s.s.e.IndexerStartupTask] Index views
+2017.05.29 09:47:22 INFO  web[jruby.rack] jruby 1.7.9 (ruby-1.8.7p370) 2013-12-06 87b108a on Java HotSpot(TM) 64-Bit Server VM 1.8.0_131-b11 [linux-amd64]
+2017.05.29 09:47:22 INFO  web[jruby.rack] using a shared (threadsafe!) runtime
+2017.05.29 09:47:35 INFO  web[jruby.rack] keeping custom (config.logger) Rails logger instance
+2017.05.29 09:47:35 INFO  web[o.s.s.p.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@586dfa97 [pattern=/sessions/init/*]
+2017.05.29 09:47:35 INFO  web[o.s.s.p.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@5b124348 [pattern=/oauth2/callback/*]
+2017.05.29 09:47:35 INFO  web[o.a.c.h.Http11NioProtocol] Starting ProtocolHandler ["http-nio-0.0.0.0-9000"]
+2017.05.29 09:47:35 INFO  web[o.s.s.a.TomcatAccessLog] Web server is started
+2017.05.29 09:47:35 INFO  web[o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+2017.05.29 09:47:35 INFO  app[o.s.p.m.Monitor] Process[web] is up
+2017.05.29 09:47:35 INFO  app[o.s.p.m.JavaProcessLauncher] Launch process[ce]: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.io.tmpdir=/home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp -javaagent:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar -cp ./lib/common/*:./lib/server/*:./lib/ce/*:/home/etentho/Developer/MavenTest/sonarqube-5.6.6/lib/jdbc/h2/h2-1.3.176.jar org.sonar.ce.app.CeServer /home/etentho/Developer/MavenTest/sonarqube-5.6.6/temp/sq-process6463328241313089629properties
+2017.05.29 09:47:36 INFO  ce[o.s.p.ProcessEntryPoint] Starting ce
+2017.05.29 09:47:36 INFO  ce[o.s.ce.app.CeServer] Compute Engine starting up...
+2017.05.29 09:47:36 INFO  ce[o.s.s.p.ServerImpl] SonarQube Server / 5.6.6 / e8e13145497bb920921ae4fe11b09f0903f1d298
+2017.05.29 09:47:36 INFO  ce[o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://localhost:9092/sonar
+2017.05.29 09:47:36 WARN  ce[o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2017.05.29 09:47:38 INFO  ce[o.s.s.p.DefaultServerFileSystem] SonarQube home: /home/etentho/Developer/MavenTest/sonarqube-5.6.6
+2017.05.29 09:47:38 INFO  ce[o.e.plugins] [sonar-1496065620850] loaded [], sites []
+2017.05.29 09:47:38 INFO  ce[o.s.c.c.CePluginRepository] Load plugins
+2017.05.29 09:47:39 INFO  ce[o.s.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Wed Nov 30 09:47:39 EST 2016
+2017.05.29 09:47:39 INFO  ce[o.s.ce.app.CeServer] Compute Engine is up
+2017.05.29 09:47:40 INFO  app[o.s.p.m.Monitor] Process[ce] is up
